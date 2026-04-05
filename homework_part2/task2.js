@@ -1,13 +1,10 @@
-function countDown(num) {
-    
-    console.log(num);
+const book = {
+    title: "Тіні забутих предків",
+    author: "Михайло Коцюбинський",
+    year: "Іван Палійчук" // За умовою задачі тут ім'я власника
+};
 
-    
-    if (num <= 0) {
-        return; 
-    }
+const { title, author } = book;
 
-    countDown(num - 1);
-}
-
-countDown(5);
+console.log("Назва книги:", title);
+console.log("Автор книги:", author);

@@ -1,23 +1,8 @@
-// 1.
-function handleEven() {
-    console.log("number is even");
-}
+const student = {};
 
-// 2. 
-function handleOdd() {
-    console.log("number is odd");
-}
+student.firstName = "Іван";
+student.lastName = "Палійчук";
+student.age = 20;
+student.courses = ["Математика", "Істория", "Програмування"];
 
-// 3. 
-function handleNum(number, evenCallback, oddCallback) {
-    
-    if (number % 2 === 0) {
-        evenCallback(); 
-    } else {
-        oddCallback();  
-    }
-}
-
-// 4.
-handleNum(10, handleEven, handleOdd); 
-handleNum(7, handleEven, handleOdd);  
+console.log(student);
