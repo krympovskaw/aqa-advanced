@@ -1,7 +1,6 @@
 import { Book } from './Book.js';
 import { EBook } from './EBook.js';
 
-
 const book1 = new Book("Kobzar", "Taras Shevchenko", 1840);
 const book2 = new Book("1984", "George Orwell", 1949);
 const book3 = new Book("The Witcher", "Andrzej Sapkowski", 1990);
@@ -14,7 +13,7 @@ book3.printInfo();
 
 const ebook1 = new EBook("Clean Code", "Robert Martin", 2008, "PDF");
 
-console.log("\n--- Електронна книга ---");
+console.log("\n--- Електрона книга ---");
 ebook1.printInfo();
 
 
