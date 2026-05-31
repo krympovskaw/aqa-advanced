@@ -212,11 +212,16 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
-    "cypress": "^15.14.2",
-    "jest": "^30.3.0"
+    "cypress": "^15.16.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "jest": "^30.3.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:qauto": "cypress run --config-file cypress.qauto.config.js",
+    "test:qauto2": "cypress run --config-file cypress.qauto2.config.js"
   },
   "repository": {
     "type": "git",
