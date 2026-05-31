@@ -1,0 +1,17 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.qauto.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.16.0",
+    "mochawesome": "^7.1.4"
+  }
+}
