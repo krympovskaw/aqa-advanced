@@ -1,13 +1,13 @@
 const { test: base, expect } = require('@playwright/test');
 
-// === 1. ОБЪЯВЛЯЕМ КЛАСС СТРАНИЦЫ (PAGE OBJECT) ===
+
 class GaragePage {
   constructor(page) {
     this.page = page;
     this.garageHeader = page.locator('h1', { hasText: 'Garage' });
     this.addCarButton = page.locator('button', { hasText: 'Add car' });
     
-    // ИСПРАВЛЕНИЕ: Берем только ту ссылку Profile, которая видима на экране
+  
     this.profileButton = page.locator('a', { hasText: 'Profile' }).filter({ visible: true });
   }
 
@@ -16,11 +16,10 @@ class GaragePage {
   }
 }
 
-// === 2. СОЗДАЕМ КАСТОМНУЮ ФИКСТУРУ С АВТО-РЕГИСТРАЦИЕЙ ===
+
 const test = base.extend({
   userGaragePage: async ({ browser }, use) => {
     
-    // Создаем чистый контекст с HTTP-авторизацией для доступа к сайту
     const context = await browser.newContext({
       httpCredentials: {
         username: 'guest',
@@ -75,3 +74,4 @@ test.describe('QAuto Garage Tests with UI Registration', () => {
   });
 
 });
+
